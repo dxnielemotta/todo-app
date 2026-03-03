@@ -18,9 +18,9 @@ export class TasksService {
     return this.taskRepository.findTaskById(id);
   }
 
-  // updateTask(id: number, updateTaskDto: UpdateTaskDto) {
-  //   return `This action updates a #${id} task`;
-  // }
+  updateTask(id: number, updateTaskDto: UpdateTaskDto) {
+    return this.taskRepository.updateTask(id, updateTaskDto);
+  }
 
   removeTask(id: number) {
     return this.taskRepository.deleteTask(id);
